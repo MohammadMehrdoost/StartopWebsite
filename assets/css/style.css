@@ -1,0 +1,237 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("../fonts/Vazir.eot"); /* IE9 Compat Modes */
+    src: url("../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+      /* IE6-IE8 */ url("../fonts/Vazir.woff2") format("woff2"),
+      /* Super Modern Browsers */ url("../fonts/Vazir.woff") format("woff"),
+      /* Pretty Modern Browsers */ url("../fonts/Vazir.ttf") format("truetype"); /* Safari, Android, iOS */
+  }
+.nav,
+.nav-item {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 0 1rem;
+    flex-wrap: nowrap;
+}
+
+.nav ul {
+    display: flex;
+}
+
+.nav ul li {
+    padding: 1rem;
+    transition-duration: 0.9ms;
+
+}
+
+.nav ul li:hover {
+    background-color: orangered;
+    border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    height: 50vh;
+    background: url(../images/slideshow1.jpg) no-repeat center center/cover;
+}
+
+.header-content {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.header-content p {
+    text-align: center;
+    margin: 1rem;
+}
+
+.header-content a {
+    border-radius: 5px;
+    background-color: orangered;
+    padding: 0.7rem 1rem;
+}
+
+.header-content a:hover {
+    background-color: rgb(197, 62, 13);
+
+}
+
+.orange-color {
+    color: orangered;
+}
+
+.services {
+    display: flex;
+}
+
+.service {
+    padding: 1rem;
+    text-align: center;
+    flex: 1;
+
+}
+
+.ico {
+    background-color: orangered;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.who {
+    display: flex;
+    background-color: #333;
+    color: white;
+
+}
+
+.who-left img {
+    width: 100%;
+    height: 100%;
+}
+
+.who-left,
+.who-right {
+    flex: 1;
+}
+
+.who-right {
+    padding: 1rem;
+}
+
+.who-right p {
+    padding: 1rem 0;
+
+}
+
+.who-right ul {
+    text-align: left;
+    padding: 1rem 0;
+}
+
+.who-right ul li {
+    border-bottom: 1px solid rgb(62, 60, 60);
+}
+
+.pics {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pic {
+    width: 32%;
+    height: 300px;
+    flex-grow: 1;
+
+}
+
+.pic img {
+    width: 100%;
+    height: 300px;
+    padding: 0.2rem;
+}
+
+.work h2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.work p {
+    text-align: center;
+}
+
+.contacts {
+    display: flex;
+    background-color: #333;
+}
+
+.contact-item label {
+    display: block;
+}
+
+.contact-form {
+    flex: 1;
+    color: white;
+}
+
+.map {
+    flex: 2;
+}
+
+.contact-form {
+    padding: 0.5rem;
+}
+
+.contact-item input {
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.btn {
+    margin-top: 0.5rem;
+}
+
+.btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    height: 7vh;
+    background-color: #333;
+    color: white;
+}
+
+@media screen and (max-width:543px) {
+
+    .nav,
+    .nav-item {
+        flex-direction: column;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+
+    .one {
+        background-color: rgb(118, 116, 116);
+    }
+
+    .who-left {
+        display: none;
+    }
+
+    .pic {
+        width: 49%;
+    }
+
+    .pic img {
+        width: 100%;
+    }
+
+    .contacts {
+        flex-direction: column;
+    }
+
+    .fix {
+        position: fixed;
+        width: 100%;
+    }
+
+    .header-content {
+        padding-top: 100px;
+    }
+}
+.nav{
+    position: fixed;
+    width: 100vw;
+}
